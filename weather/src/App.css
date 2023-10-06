@@ -1,5 +1,7 @@
 /* CSS für die Wetter-App */
-
+#root {
+  width: 100%;
+}
 /* Allgemeine Stile für den Körper der App */
 body {
   margin: 0;
@@ -8,70 +10,20 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(90deg, #764BA2, #667EEA, #764BA2); /* Lila nach Blau nach Lila */
-  background-size: 300% 100%; /* Hinzugefügte Größe des Verlaufs */
+  background-image: url('./assets/nature-1696523634429-4458.jpg');
+  background-size: auto; 
+  background-repeat: no-repeat; 
+  background-size: cover;  
+  background-position: center center;
 }
 
-
-/* Container-Stil für den Inhalt der App */
-.container {
-  background-color: #242424; /* Dunkler Hintergrund */
-  padding: 2rem;
-  border-radius: 10px; /* Runde Ecken */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
-  max-width: 100%;
-  width: 100%; /* Breite auf 100% setzen */
-}
-
-/* Header-Stil */
-.header {
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 10px 10px 0 0; /* Runde Ecken nur oben */
-}
-
-/* Hauptinhalt-Stil für Handys */
-.main-content-mobile {
-  padding: 1rem;
-}
-
-/* Hauptinhalt-Stil für Tablets */
-.main-content-tablet {
-  padding: 2rem;
-}
-
-/* Hauptinhalt-Stil für größere Bildschirme */
-.main-content-large {
-  padding: 3rem;
-}
-
-/* Stil für die Felder mit Aufleuchteffekt beim Überfahren */
 .rounded-lg {
   transition: transform 0.3s ease-in-out;
 }
 
 .rounded-lg:hover {
-  transform: scale(1.05); /* Vergrößere das Element leicht */
+  transform: scale(1.05); 
 }
 
-/* Media Queries für Handys */
-@media screen and (max-width: 767px) {
-  .main-content {
-    padding: 1rem;
-  }
-}
 
-/* Media Queries für Tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .main-content {
-    padding: 2rem;
-  }
-}
 
-/* Media Queries für größere Bildschirme */
-@media screen and (min-width: 1024px) {
-  .main-content {
-    padding: 3rem;
-  }
-}
