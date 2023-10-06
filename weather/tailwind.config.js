@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'currentlocation': "url('assets/currentlocation.jpg')",
+        'Frankfurt': "url('assets/Frankfurt.jpg')",
+        'Dubai': "url('assets/Dubai.jpg')",
+        'Madrid': "url('assets/Madrid.jpg')",
+        'Singapur': "url('assets/Singapur.jpg')",
+      }
+    },
   },
   
   plugins: [require("daisyui")],
